@@ -1,0 +1,37 @@
+{
+  "name": "large-file-upload",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "cli": "pankod-cli add",
+    "build:analyze": "ANALYZE=true npm run build"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^10.0.5",
+    "axios": "^0.21.1",
+    "next": "10.2.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-i18next": "^7.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swr": "^0.4.0",
+    "tus-js-client": "^2.3.0",
+    "zustand": "^3.5.7"
+  },
+  "devDependencies": {
+    "@pankod/pankod-cli": "^1.0.1",
+    "@types/node": "^16.3.3",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2",
+    "typescript": "^4.1.3"
+  },
+  "pankod": {
+    "projectType": "nextjs"
+  }
+}
