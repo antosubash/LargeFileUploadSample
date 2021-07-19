@@ -58,7 +58,6 @@ namespace LargeFileUpload
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseAuthorization();
             app.UseCors(builder => builder
                    .AllowAnyHeader()
                    .AllowAnyMethod()
@@ -86,7 +85,9 @@ namespace LargeFileUpload
                     }
                 }
             });
+
             app.UseRouting();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
